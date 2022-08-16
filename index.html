@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dice</title>
+    <link rel="stylesheet" href="BOOTSTRAP/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container first">
+      <h2 class="text-center">Dice Game</h2>
+        <div class="card card-body">
+          <form>
+            <div class="form-group">
+              <label for="Name">
+                Enter Name:
+              </label>
+              <input
+                type="text"
+                class="name form-control"
+                placeholder="Enter Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Avatar">
+                Select Character:
+              </label>
+              <select class="form-control select-avatar">
+                <option value="" selected disabled>Choose Character</option>
+                <option value="Aang">Avatar Aang</option>
+                <option value="Zuko">Prince Zuko</option>
+                <option value="Korra">Avatar Korra</option>
+                <option value="Azula">Princess Azula</option>
+              </select>
+            </div>
+          </form>
+          <label for="Image">
+            Characters Images
+          </label>
+          <div class="row mt-2">
+            <div class="col-md-3">
+              <div class="polaroid">
+                <img src="image/Avatar_Aang.png" style="width: 100%;" class="img-fluid img-thumbnail" />
+                <div class="avatar-name">
+                  <p>Avatar Aang</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="polaroid">
+                <img src="image/Prince_Zuko.jpg" style="width: 100%;" class="img-fluid img-thumbnail" />
+                <div class="avatar-name">
+                  <p>Prince Zuko</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="polaroid">
+                <img src="image/korra.jpeg" style="width: 100%;" class="img-fluid img-thumbnail" />
+                <div class="avatar-name">
+                  <p>Avatar Korra</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="polaroid">
+                <img src="image/azula.jpeg" style="width: 100%;" class="img-fluid img-thumbnail" />
+                <div class="avatar-name">
+                  <p>Princess Azula</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <button class="btn btn-primary proceed">
+            Proceed
+          </button>
+        </div>
+    </div>
+
+    <div class="container main">
+      <div class="row mt-5">
+        <div class="col-md-6 m-auto">
+          <div class="card card-body">
+            <h3 class="welcome-text"></h3>
+            <h4>Can you win the computer's money.</h4>
+            <h6>All bets are N50 and you have N200 each.</h6>
+            <h6>Click on <b>Roll Dice</b> to play.</h6>
+            <p><b>and GOODLUCK</b></p>
+            <button class="btn btn-success">Restart</button>
+          </div>
+        </div>
+        <div class="col-md-6 m-auto">
+          <div class="card card-body">
+            <div class="text-success">
+              Player:
+            </div>
+            <div class="money1"></div>
+            <br />
+            <div class="text-danger">
+              Computer:
+            </div>
+            <div class="money2"></div>
+            <br />
+            <div class="output"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <div class="container text-center">
+      <div class="row text-center">
+        <div class="col-md-6">
+          <div class="dice-output"></div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="dice-output2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <div class="row text-center">
+        <div class="col-md-6">
+          <div class="avatar-output"></div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="avatar-output2"></div>
+        </div>
+      </div>
+      <button class="btn btn-primary play">Roll Dice</button>
+    </div>
+
+    <script src="BOOTSTRAP/js/jquery-3.3.1.min.js"></script>
+    <script src="BOOTSTRAP/js/bootstrap.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script2.js" charset="utf-8"></script>
+  </body>
+</html>
